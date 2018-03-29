@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_complaints_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/yel"
+    tools:context="com.example.prasan.serviceloggingsystem.ComplaintsPage">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/yourcomp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginStart="124dp"
+        android:id="@+id/imageView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="13dp"
+        android:id="@+id/compcustid"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:hint="Customer ID" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/compcustname"
+        tools:ignore="HardcodedText"
+        android:hint="Machine ID"
+        android:layout_below="@+id/compcustid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/Typeofcomp"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/compcustname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/compdesc"
+        tools:ignore="HardcodedText"
+        android:hint="problem"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/compdate"
+        tools:ignore="HardcodedText"
+        android:hint="ComplaintDate(YYYY-MM-DD)"
+        android:layout_below="@+id/compdesc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+
+        android:text="Generate"
+        android:onClick="complaintnum"
+        android:background="@drawable/roundbut"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:id="@+id/btncompnum"
+        tools:ignore="HardcodedText"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:layout_alignBottom="@+id/etcomplaintnumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etcomplaintnumber"
+        android:hint="Complaint Number"
+        tools:ignore="HardcodedText,TextFields"
+        android:layout_below="@+id/compdate"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:text="Register"
+        android:textSize="16sp"
+        android:onClick="complaintreg"
+        android:background="@drawable/oval"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/compregister"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

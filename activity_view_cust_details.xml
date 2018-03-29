@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_cust_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/viewusers"
+    tools:context="com.example.prasan.serviceloggingsystem.ViewCustDetails">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:id="@+id/etcustID"
+        android:hint="Enter Customer ID"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="450dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@+id/btnCsearch"
+        android:layout_marginTop="123dp"
+        android:id="@+id/txtviewres"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <Button
+        android:text="Search"
+        android:gravity="center"
+        android:shadowRadius="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btnCsearch"
+        tools:ignore="HardcodedText"
+        android:background="#00FF00"
+        android:layout_below="@+id/etcustID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

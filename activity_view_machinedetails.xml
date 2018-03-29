@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_machinedetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/mach"
+    tools:context="com.example.prasan.serviceloggingsystem.ViewMachinedetails">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etmachcustid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:hint="Enter Customer ID" />
+
+    <Button
+        android:text="Check Machine Details"
+        android:textColor="#FFA500"
+        android:background="@drawable/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etmachcustid"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btncheckmach"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_below="@+id/btncheckmach"
+        android:layout_marginTop="55dp"
+        android:id="@+id/txtresmach"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText"
+        android:textColor="#FF1493"
+        android:background="#FFFFFF"
+        />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_engineer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/engineer"
+    tools:context="com.example.prasan.serviceloggingsystem.EngineerActivity">
+
+    <TextView
+        android:text="Logout"
+        android:textColor="#0057FF"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/txtenglogout"
+        tools:ignore="HardcodedText"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <Button
+        android:text="Update Complaint Status"
+        android:background="@drawable/circ"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/button6"
+        tools:ignore="HardcodedText"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_below="@+id/txtenglogout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:onClick="updatestat" />
+</RelativeLayout>

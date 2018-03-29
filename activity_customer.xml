@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.prasan.serviceloggingsystem.CustomerActivity"
+    android:background="#FFA500"
+    >
+
+    <TextView
+        android:text="Make Complaint"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnmakecom"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView2"
+        android:layout_alignRight="@+id/btnmakecom"
+        android:layout_alignEnd="@+id/btnmakecom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:text="Check status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:gravity="center"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Check Machine Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/btnCheckMachdetails"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_below="@+id/btnviewcust"
+        android:background="@drawable/oval"
+        android:textColor="#00FF00"
+        android:textSize="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/complaint"
+        android:layout_marginTop="69dp"
+        android:id="@+id/btnmakecom"
+        android:contentDescription=""
+        tools:ignore="ContentDescription,UnusedAttribute"
+        android:elevation="1dp"
+        android:layout_below="@+id/btnCheckMachdetails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="View Customer Details"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnviewcust"
+        tools:ignore="HardcodedText,SpUsage"
+        android:background="@drawable/oval"
+        android:textColor="#00FF00"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Logout"
+        android:textColor="#0057FF"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtcustlogout"
+        android:layout_alignParentTop="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:layout_width="155dp"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/status"
+        android:id="@+id/imgstatus"
+        android:layout_alignTop="@+id/btnmakecom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_eng_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/eng2"
+    tools:context="com.example.prasan.serviceloggingsystem.AddEngDetails">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etengID"
+        tools:ignore="HardcodedText"
+
+        android:hint="Enter EngineerID"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+
+        android:layout_below="@+id/etengname"
+        android:layout_alignRight="@+id/etengname"
+        android:layout_alignEnd="@+id/etengname"
+        android:layout_marginTop="21dp"
+        android:id="@+id/etengmobno"
+        tools:ignore="HardcodedText"
+        android:hint="Enter MobileNumber"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+
+        android:layout_below="@+id/etengmobno"
+        android:layout_marginTop="28dp"
+        android:id="@+id/etengmailid"
+        tools:ignore="HardcodedText"
+        android:hint="Enter MailID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+
+        android:ems="10"
+        android:layout_below="@+id/etengmailid"
+        android:layout_alignRight="@+id/etengmailid"
+        android:layout_alignEnd="@+id/etengmailid"
+        android:layout_marginTop="23dp"
+        android:id="@+id/etengexperience"
+        tools:ignore="HardcodedText"
+        android:hint="Enter Experience"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etengexperience"
+        android:layout_alignRight="@+id/etengmobno"
+        android:layout_alignEnd="@+id/etengmobno"
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/etengAvailability"
+        tools:ignore="HardcodedText"
+        android:hint="Availability"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+
+        android:id="@+id/etengname"
+        tools:ignore="HardcodedText"
+        android:hint="Enter EngineerName"
+        android:layout_below="@+id/etengID"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="ADD"
+        android:textColor="#00FF00"
+        android:onClick="OnClickEngIns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/btnegadd"
+        android:background="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/etengAvailability"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="UPDATE"
+        android:textColor="#00FF00"
+        android:onClick="OnClickEngUp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="DELETE"
+        android:textColor="#00FF00"
+        android:onClick="OnClickEngDel"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btnegadd"
+        android:layout_toEndOf="@+id/btnegadd"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="VIEW"
+        android:textColor="#00FF00"
+        android:onClick="OnClickEngView"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="86dp"
+        android:layout_marginEnd="86dp"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_service_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/circle"
+    tools:context="com.example.prasan.serviceloggingsystem.ServiceDetails">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/repair"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="125dp"
+        android:layout_marginStart="125dp"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etsermachname"
+        android:layout_alignRight="@+id/etsermachname"
+        android:layout_alignEnd="@+id/etsermachname"
+        android:layout_marginTop="27dp"
+        android:id="@+id/etsermachmodel"
+        tools:ignore="HardcodedText"
+        android:hint="Enter Machine Model" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etsermachmodel"
+        android:layout_alignRight="@+id/etsermachmodel"
+        android:layout_alignEnd="@+id/etsermachmodel"
+        android:layout_marginTop="23dp"
+        android:id="@+id/etservicename"
+        tools:ignore="HardcodedText"
+        android:hint="Enter Service Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etservicename"
+        android:layout_alignRight="@+id/etservicename"
+        android:layout_alignEnd="@+id/etservicename"
+        android:layout_marginTop="35dp"
+        android:id="@+id/etsercharges"
+        tools:ignore="HardcodedText"
+        android:hint="Enter Service charges" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/etsermachname"
+        tools:ignore="HardcodedText"
+        android:hint="Enter Machine Name"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="51dp"
+        android:layout_marginEnd="51dp" />
+
+    <Button
+        android:text="DELETE"
+        android:onClick="OnclickDelser"
+        android:textColor="#00FF00"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnserdel"
+        android:layout_alignTop="@+id/btnseradd"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="UPDATE"
+        android:onClick="OnClickserviceUp"
+        android:textColor="#00FF00"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnseradd"
+        android:layout_alignStart="@+id/btnseradd"
+        android:id="@+id/btnserup"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="VIEW"
+        android:textColor="#00FF00"
+        android:onClick="OnClickserView"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnserup"
+        android:layout_alignLeft="@+id/btnserdel"
+        android:layout_alignStart="@+id/btnserdel"
+        android:id="@+id/btnserview"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:text="ADD"
+        android:textColor="#00FF00"
+        android:onClick="OnClickserAdd"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnseradd"
+        android:layout_below="@+id/etsercharges"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

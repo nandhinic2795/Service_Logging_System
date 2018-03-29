@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_sec"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0057FF"
+    tools:context="com.example.prasan.serviceloggingsystem.AdminSecActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/etnum"
+        tools:ignore="HardcodedText,RelativeOverlap"
+        android:hint="Enter Complaint Number" />
+
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="150dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/etcmp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/txtviewcmp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <Button
+        android:text="View Complaints"
+        android:textSize="12sp"
+        android:textColor="#EB47E0"
+        android:background="@drawable/circle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcmp"
+        tools:ignore="HardcodedText"
+        android:layout_alignTop="@+id/etnum"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/txtviewcmp"
+        android:layout_marginTop="48dp"
+        android:id="@+id/engphno"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter Engineer Phone Number"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/msg"
+        android:id="@+id/imageView9"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:layout_alignBottom="@+id/btnsend"
+        android:layout_toLeftOf="@+id/btnsend" />
+
+    <Button
+        android:text="Send notification to engineer"
+        android:background="@drawable/circ"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsend"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:ignore="HardcodedText"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/engphno"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="71dp"
+        android:layout_marginEnd="71dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/blk"
+        android:id="@+id/imgfwd"
+        tools:ignore="ContentDescription"
+        android:layout_below="@+id/btnsend"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
